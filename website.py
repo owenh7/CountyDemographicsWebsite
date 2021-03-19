@@ -4,3 +4,7 @@ import json
 @app.route("/")
 def render_main():
     return render_template('home.html')
+
+def get_state_options
+    states = []
+    print
