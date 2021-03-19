@@ -1,4 +1,6 @@
-from flask import Flask, request, Markup, render_template, flash, Markup import os
+from flask import Flask, request, Markup, render_template, flash, Markup 
+app = Flask(_name_)
+import os
 import json
 
 @app.route("/")
