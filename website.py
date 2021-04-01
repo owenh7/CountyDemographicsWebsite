@@ -5,8 +5,8 @@ import json
 app = Flask(__name__)
 
 @app.route("/")
-def render_main():
-    print("RunningMain")
+def render_home():
+    print("RunningHome")
     with open('county_demographics.json') as demographics_data:
         counties = json.load(demographics_data)
         
