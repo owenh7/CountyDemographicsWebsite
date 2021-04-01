@@ -24,6 +24,4 @@ def get_state_options(counties):
     for data in states:
         options = options + Markup("<option value="" + data + "">" + data + "</option>")
     return options
-def get_state_options
-    states = []
-    print
+
