@@ -1,7 +1,8 @@
 from flask import Flask, request, Markup, render_template, flash, Markup 
-app = Flask(_name_)
 import os
 import json
+
+app = Flask(name)
 
 @app.route("/")
 def render_main():
