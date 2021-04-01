@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>State Facts</title> 
-  </head>
 <body>
-<form action="/action_page.php">
+<title>AgeMetrics</title>
+<h1>Age Database</h1>
+<p>Enter your state and county to receive age data</p>
+<form action="/">
   <label for="States">Choose a State:</label>
   <select name="states">
     {{states}}
@@ -12,5 +12,15 @@
   <br><br>
   <input type="submit">
 </form>
+<p> Percentage of the population under 18 years old: {{ average_age }}%</p>
+<form action="/">
+  <label for="Counties">Choose a County:</label>
+  <select name="counties">
+    {{counties}}
+  </select>
+  <br><br>
+  <input type="submit">
+</form>
+<p> Percentage of the population under 18 years old within the county: {{ county_age }}%</p>
 </body>
 </html>
