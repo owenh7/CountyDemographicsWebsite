@@ -4,7 +4,12 @@ import json
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/login', methods=['GET', 'POST']) 
+def login(): 
+    if request.method == 'POST': 
+        do_the_login() 
+    else: 
+        show_the_login_form()
 def render_main():
     print("RunningMain")
     with open('county_demographics.json') as demographics_data:
